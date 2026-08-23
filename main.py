@@ -103,8 +103,177 @@
 
 
 
-text2 = input("Enter a text: ")
+# text2 = input("Enter a text: ")
 
-for i in text2:
-    if i == "a" or i == "e" or i == "i" or i == "o" or i == "u":
-        print(i.upper())
+# for i in text2:
+#     if i == "a" or i == "e" or i == "i" or i == "o" or i == "u":
+#         print(i.upper())
+
+
+# INTERMEDIATE EXERCISES
+
+# numbers2 = [1, 4, 7, 10, 13, 16, 19, 22, 25]
+
+# new_list = [num for num in numbers2 if num % 2 == 0]
+# print(new_list)
+
+
+
+
+# numbers4 = [1, 2, 3, 4, 5, 6, 7]
+
+# new_list2 = [i ** 2 for i in numbers4 if i % 2 != 0]
+# print(new_list2)
+
+
+
+
+# numbers5 = [1, 2, 2, 3, 4, 4, 5, 5, 5]
+
+# new_list3 = set(numbers5)
+# print(list(new_list3))
+
+
+
+# a = {1, 2, 3, 4, 5}
+# b = {4, 5, 6, 7, 8}
+
+# c = a.union(b)
+# d = a.intersection(b)
+# e = a.difference(b)
+# e2 = b.difference(a)
+# f = a.symmetric_difference(b)
+
+# print(c)
+# print(d)
+# print(e)
+# print(e2)
+# print(f)
+
+
+# def average_marks(marks):
+    
+#     total = sum(marks)
+#     average = (total / len(marks))
+#     grade = ""
+#     if average >= 90:
+#         grade = "A"
+#     elif average >= 80:
+#         grade = "B"
+#     elif average >= 70:
+#         grade = "C"
+#     elif average >= 60:
+#         grade = "D"
+#     elif average >= 50:
+#         grade = "E"
+#     elif average < 50:
+#         grade = "F"
+#     return average, grade
+
+# marks = [78, 85, 92, 66, 88]
+
+# print(average_marks(marks))
+
+
+
+
+# numbers5 = [10, 5, 25, 8, 17]
+
+# def find_largest(numbers):
+    
+#     big_one = 0
+#     for i in numbers:
+#         if i > big_one:
+#             big_one = i
+#     return big_one
+
+# print(find_largest(numbers5))
+
+
+
+# def palindrome_checker(word):
+    
+#     reversed = word[::-1]
+
+#     return reversed == word 
+
+# word = input("Enter your word: ")
+# print(palindrome_checker(word))
+
+
+
+
+
+# numbers6 = [10, 5, 25, 8, 17]
+
+# def statistics(nums):
+
+#     even_count = 0
+#     odd_count = 0
+#     minimum = min(nums)
+#     maximum = max(nums)    
+#     total = sum(nums)
+#     average = total / len(nums)
+#     for i in nums:
+#         if i % 2 == 0:
+#             even_count += 1
+#         else:
+#             odd_count += 1
+#     return f"Minimum: {minimum} - Maximum: {maximum} - Sum: {total} - Average: {average} - Odd Count: {odd_count} - Even Count: {even_count}" 
+
+
+# print(statistics(numbers6))               
+
+
+
+
+
+# words = ["Python", "JavaScript", "SQL", "React"]
+
+# new_words = { i : len(i) for i in words}
+
+# print(new_words)
+
+
+
+
+# ADVANCE EXERCISES
+
+
+
+# numbers = [10, 5, 20, 8, 20, 15]
+
+# new_numbers = set(numbers)
+
+# largest_num = 0
+# sec_larg_num = 0
+
+# for i in new_numbers:
+#     if i > largest_num:
+#         sec_larg_num = largest_num
+#         largest_num = i
+#     elif i > sec_larg_num and i < largest_num:
+#         sec_larg_num = i    
+
+
+# print(sec_larg_num, largest_num)        
+
+
+
+
+# word1 = input("Enter first word: ")
+# word2 = input("Enter second word: ")
+
+# dict1 = {x: word1.lower().count(x) for x in word1.lower().strip()}
+# dict2 = {x: word2.lower().count(x) for x in word2.lower().strip()}
+
+
+# def anagrams_checker(word1, word2):
+#     if word1 == word2:
+#         return "Anagram Approved"
+#     else:
+#         return "Not an Anagram"
+
+
+# print(anagrams_checker(dict1, dict2))
+
